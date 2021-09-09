@@ -1,4 +1,4 @@
-public class Person <V> implements Comparable{
+public class Person<V extends Number> implements Comparable {
     private V identifier;
     private String name;
     private String surname;
@@ -26,9 +26,9 @@ public class Person <V> implements Comparable{
         Person p1 = (Person) o;
         Person p2 = (Person) o2;
 
-        if(p1.age == p2.age){
+        if (p1.age == p2.age) {
             return 0;
-        } else if (p1.age > p2.age){
+        } else if (p1.age > p2.age) {
             return 1;
         }
         return -1;
