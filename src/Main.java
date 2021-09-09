@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         List <Person> people = new ArrayList<>();
 
-        Person person1 = new Person("abc", "Marian", "Wisniewski", 34);
+        Person person1 = new Person(1234L, "Marian", "Wisniewski", 34);
         System.out.println(person1);
         people.add(person1);
         Person person2 = new Person(12, "Jan", "Kaminski", 44);
